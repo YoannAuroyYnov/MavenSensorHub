@@ -1,7 +1,9 @@
-package com.sensor.report.impl.reportgeneration;
+package com.sensor.report.impl;
 
-import com.sensor.sensordata.SensorData;
-import com.sensor.utils.Utils;
+import com.sensor.api.model.SensorData;
+import com.sensor.spi.AbstractReportGenerator;
+import com.sensor.shared.enums.ReportType;
+import com.sensor.shared.util.Utils;
 
 import java.io.FileWriter;
 import java.io.IOException;

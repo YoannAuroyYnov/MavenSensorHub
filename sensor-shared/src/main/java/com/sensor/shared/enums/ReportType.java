@@ -1,4 +1,4 @@
-package com.sensor.shared.reportgeneration;
+package com.sensor.shared.enums;
 
 public enum ReportType {
     TEXT("Text"),

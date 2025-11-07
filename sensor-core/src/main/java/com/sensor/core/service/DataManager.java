@@ -1,9 +1,15 @@
 package com.sensor.core.service;
 
-import com.sensor.sensordata.ISensor;
-import com.sensor.sensordata.SensorData;
-import com.sensor.sensordata.SensorType;
-import com.sensor.utils.Utils;
+import com.sensor.api.model.SensorData;
+import com.sensor.api.service.IDataManager;
+import com.sensor.api.sensor.ISensor;
+import com.sensor.persistence.DataStorage;
+import com.sensor.persistence.DataCollector;
+import com.sensor.core.business.DataValidator;
+
+
+import com.sensor.shared.enums.SensorType;
+import com.sensor.shared.util.Utils;  
 
 import java.text.MessageFormat;
 import java.time.LocalDateTime;

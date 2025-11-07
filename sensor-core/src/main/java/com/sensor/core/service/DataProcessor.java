@@ -1,14 +1,17 @@
 package com.sensor.core.service;
 
-import com.sensor.sensordata.SensorData;
-import com.sensor.sensordata.SensorType;
+import com.sensor.api.model.SensorData;
+import com.sensor.shared.enums.SensorType;
 
 import java.time.LocalDateTime;
 import java.util.Map;
 import java.util.Optional;
 import java.util.stream.DoubleStream;
+import com.sensor.api.service.IDataProcessor;
+import com.sensor.persistence.DataStorage;
 
-class DataProcessor implements IDataProcessor {
+
+public class DataProcessor implements IDataProcessor {
     private final DataStorage dataStorage;
 
     public DataProcessor(final DataStorage dataStorage) {

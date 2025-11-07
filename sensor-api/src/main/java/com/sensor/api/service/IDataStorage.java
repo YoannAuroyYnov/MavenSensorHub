@@ -1,7 +1,7 @@
-package com.sensor.core.service;
+package com.sensor.api.service;
 
-import com.sensor.sensordata.SensorData;
-import com.sensor.sensordata.SensorType;
+import com.sensor.api.model.SensorData;
+import com.sensor.shared.enums.SensorType;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.sensor.core.sensor;
+package com.sensor.shared.enums;
 
 public enum SensorType {
     HUMIDITY("HumiditySensor", 20, 80, "%"),

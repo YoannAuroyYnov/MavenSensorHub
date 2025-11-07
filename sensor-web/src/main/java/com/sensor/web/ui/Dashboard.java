@@ -1,8 +1,8 @@
-package com.sensor.web.userinterface;
+package com.sensor.web.ui;
 
-import com.sensor.datamanagement.IDataManager;
-import com.sensor.sensordata.SensorData;
-import com.sensor.sensordata.SensorType;
+import com.sensor.api.service.IDataManager;
+import com.sensor.api.model.SensorData;
+import com.sensor.shared.enums.SensorType;
 
 import java.text.MessageFormat;
 import java.util.List;

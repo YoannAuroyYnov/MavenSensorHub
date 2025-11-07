@@ -1,4 +1,4 @@
-package com.sensor.shared.userinterface;
+package com.sensor.shared.enums;
 
 public enum UserAction {
     ADD_HUMIDITY_SENSOR("addHumiditySensor", "Add a humidity sensor"),

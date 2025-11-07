@@ -1,8 +1,8 @@
-package com.sensor.web.userinterface;
+package com.sensor.web.ui;
 
 import java.text.MessageFormat;
 import java.util.Scanner;
-
+import com.sensor.shared.enums.UserAction;
 class UserInteraction {
     public UserAction getUserPrompt() {
         for (UserAction userAction : UserAction.values()) {

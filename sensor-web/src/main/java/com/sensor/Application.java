@@ -1,14 +1,15 @@
-package com.sensor.web.mastersensorhub;
+package com.sensor;
 
-import com.sensor.datamanagement.IDataManager;
-import com.sensor.reportgeneration.IReportGenerator;
-import com.sensor.reportgeneration.ReportType;
-import com.sensor.sensordata.ISensorFactory;
-import com.sensor.sensordata.SensorType;
-import com.sensor.userinterface.IApplication;
-import com.sensor.userinterface.IUserInterface;
-import com.sensor.userinterface.UserAction;
-import com.sensor.utils.Utils;
+import com.sensor.api.service.IDataManager;
+import com.sensor.api.ui.IApplication;
+import com.sensor.api.ui.IUserInterface;
+import com.sensor.shared.enums.ReportType;
+import com.sensor.shared.enums.SensorType;
+import com.sensor.shared.enums.UserAction;
+import com.sensor.shared.util.Utils;
+import com.sensor.spi.IReportGenerator;
+import com.sensor.api.sensor.ISensorFactory;
+
 
 public class Application implements IApplication {
     private IUserInterface userInterface;

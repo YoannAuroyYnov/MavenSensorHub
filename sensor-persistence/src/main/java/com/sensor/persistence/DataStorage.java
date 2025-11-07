@@ -1,13 +1,14 @@
-package com.sensor.core.service;
+package com.sensor.persistence;
 
-import com.sensor.sensordata.SensorData;
-import com.sensor.sensordata.SensorType;
+import com.sensor.api.model.SensorData;
+import com.sensor.shared.enums.SensorType;
+import com.sensor.api.service.IDataStorage; 
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-class DataStorage implements IDataStorage {
+public class DataStorage implements IDataStorage {
     private final List<SensorData> storage = new ArrayList<>();
 
     public final void storeData(final SensorData sensorData) {

@@ -9,9 +9,29 @@
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>sensor-shared</artifactId>
+    <artifactId>sensor-web</artifactId>
     <packaging>jar</packaging>
     <dependencies>
+        <dependency>
+            <groupId>com.sensor</groupId>
+            <artifactId>sensor-shared</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sensor</groupId>
+            <artifactId>sensor-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sensor</groupId>
+            <artifactId>sensor-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sensor</groupId>
+            <artifactId>sensor-persistence</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sensor</groupId>
+            <artifactId>sensor-report-impl</artifactId>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

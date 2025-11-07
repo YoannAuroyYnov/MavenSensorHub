@@ -1,8 +1,7 @@
-package com.sensor.core.service;
+package com.sensor.api.service;
 
-import com.sensor.sensordata.ISensor;
-import com.sensor.sensordata.SensorData;
-
+import com.sensor.api.model.SensorData;
+import com.sensor.api.sensor.ISensor;
 import java.util.List;
 
 public interface IDataManager extends IDataProcessor {

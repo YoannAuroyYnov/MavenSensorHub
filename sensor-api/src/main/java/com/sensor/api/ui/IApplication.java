@@ -1,6 +1,7 @@
-package com.sensor.api.userinterface;
+package com.sensor.api.ui;
 
-import com.sensor.datamanagement.IDataManager;
+import com.sensor.api.service.IDataManager;
+import com.sensor.shared.enums.UserAction;
 
 public interface IApplication {
     void manageOrder(UserAction userAction);

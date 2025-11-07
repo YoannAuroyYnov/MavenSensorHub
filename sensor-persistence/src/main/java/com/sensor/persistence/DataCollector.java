@@ -1,14 +1,14 @@
-package com.sensor.core.service;
+package com.sensor.persistence;
 
-import com.sensor.sensordata.ISensor;
-import com.sensor.sensordata.SensorData;
-import com.sensor.sensordata.SensorType;
+import com.sensor.api.model.SensorData;
+import com.sensor.api.sensor.ISensor;
+import com.sensor.shared.enums.SensorType;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-class DataCollector {
+public class DataCollector {
     private final ISensor sensor;
     private final List<SensorData> collectedData = new ArrayList<>();
 

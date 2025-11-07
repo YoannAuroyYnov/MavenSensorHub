@@ -9,9 +9,19 @@
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>sensor-shared</artifactId>
+    <artifactId>sensor-persistence</artifactId>
     <packaging>jar</packaging>
     <dependencies>
+        <dependency>
+            <groupId>com.sensor</groupId>
+            <artifactId>sensor-shared</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sensor</groupId>
+            <artifactId>sensor-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

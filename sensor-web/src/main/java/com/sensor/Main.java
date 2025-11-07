@@ -1,10 +1,10 @@
-package com.sensor.web;
+package com.sensor;
 
-import com.sensor.datamanagement.DataManager;
-import com.sensor.mastersensorhub.Application;
-import com.sensor.reportgeneration.ReportGenerator;
-import com.sensor.sensordata.SensorFactory;
-import com.sensor.userinterface.UserInterface;
+
+import com.sensor.core.service.DataManager;
+import com.sensor.core.factory.SensorFactory; 
+import com.sensor.report.impl.ReportGenerator;
+import com.sensor.web.ui.UserInterface;
 
 public enum Main {
     ;

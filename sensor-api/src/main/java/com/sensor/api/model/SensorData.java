@@ -1,6 +1,7 @@
-package com.sensor.core.sensor;
+package com.sensor.api.model;
 
 import java.time.LocalDateTime;
+import com.sensor.shared.enums.SensorType;
 
 public record SensorData(LocalDateTime time, SensorType sensorType, String unit, int value) {
     public SensorData(SensorType sensorType, String unit, int value) {

@@ -1,12 +1,13 @@
-package com.sensor.spi.reportgeneration;
+package com.sensor.spi;
 
-import com.sensor.sensordata.SensorData;
-import com.sensor.utils.Utils;
+import com.sensor.api.model.SensorData;
+import com.sensor.shared.enums.ReportType;
+import com.sensor.shared.util.Utils;
 
 import java.text.MessageFormat;
 import java.util.List;
 
-abstract class AbstractReportGenerator {
+public abstract class AbstractReportGenerator {
     private final ReportType reportType;
 
     protected AbstractReportGenerator(final ReportType reportType) {

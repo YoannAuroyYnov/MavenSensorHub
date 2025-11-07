@@ -1,11 +1,12 @@
-package com.sensor.core.service;
+package com.sensor.core.business;
 
-import com.sensor.sensordata.SensorData;
+import com.sensor.api.model.SensorData;
+import com.sensor.core.service.DataProcessor;
 
 import java.time.Duration;
 import java.util.Optional;
 
-class DataValidator {
+public class DataValidator {
     private final static double MAX_PERCENTAGE_DIFFERENCE_IN_ONE_MINUTE = 0.01;
 
     public final boolean validate(DataProcessor dataProcessor, SensorData sensorData) {

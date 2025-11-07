@@ -1,4 +1,4 @@
-package com.sensor.shared.util;
+package com.sensor.shared.enums;
 
 public enum LogType {
     INFO("INFO"),

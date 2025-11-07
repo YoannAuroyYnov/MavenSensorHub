@@ -1,6 +1,7 @@
-package com.sensor.spi.reportgeneration;
+package com.sensor.spi;
 
-import com.sensor.sensordata.SensorData;
+import com.sensor.api.model.SensorData;
+import com.sensor.shared.enums.ReportType;
 
 import java.util.List;
 

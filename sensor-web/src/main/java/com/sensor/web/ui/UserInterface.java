@@ -1,6 +1,8 @@
-package com.sensor.web.userinterface;
+package com.sensor.web.ui;
 
-import com.sensor.sensordata.SensorData;
+import com.sensor.api.model.SensorData;
+import com.sensor.api.ui.IApplication;
+import com.sensor.api.ui.IUserInterface;
 
 import java.util.List;
 

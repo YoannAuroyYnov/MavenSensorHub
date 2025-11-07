@@ -1,5 +1,6 @@
 package com.sensor.shared.util;
 
+import com.sensor.shared.enums.LogType;
 public interface ILogger {
     void logInfo(String message);
 

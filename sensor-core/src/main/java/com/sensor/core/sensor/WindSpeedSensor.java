@@ -1,6 +1,8 @@
 package com.sensor.core.sensor;
 
-class WindSpeedSensor extends AbstractSensor {
+import com.sensor.shared.enums.SensorType;
+import com.sensor.spi.AbstractSensor;
+public class WindSpeedSensor extends AbstractSensor {
     public WindSpeedSensor() {
         super(SensorType.WIND_SPEED);
     }

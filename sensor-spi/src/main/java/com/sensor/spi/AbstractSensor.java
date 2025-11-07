@@ -1,17 +1,20 @@
-package com.sensor.core.sensor;
+package com.sensor.spi;
 
-import com.sensor.utils.Utils;
+import com.sensor.api.model.SensorData;
+import com.sensor.api.sensor.ISensor;
+import com.sensor.shared.enums.SensorType;
+import com.sensor.shared.util.Utils;
 
 import java.util.Random;
 
-abstract class AbstractSensor implements ISensor {
+public abstract class AbstractSensor implements ISensor {
     static final int START_VALUE = 99999;
     private static final double MAX_PERCENTAGE_DIFFERENCE = 0.01;
     private final Random random = new Random();
     private final SensorType sensorType;
     private double lastValue = AbstractSensor.START_VALUE;
 
-    AbstractSensor(final SensorType sensorType) {
+    public AbstractSensor(final SensorType sensorType) {
         this.sensorType = sensorType;
     }
 

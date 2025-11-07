@@ -74,3 +74,10 @@ Pour visualiser les résultats des tests, cliquez sur l'onglet `Actions` de votr
 Cliquez ensuite `Autograding` pour voir le détail des tests.
 
 Pour le moment, les dépendances entre les modules sont mauvaises. Les tests échouent donc.
+
+## Build and run
+
+```bash
+mvn clean install -DskipTests
+mvn exec:java -pl main-application -Dexec.mainClass="com.jad.Main"
+```

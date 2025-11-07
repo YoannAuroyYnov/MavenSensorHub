@@ -1,0 +1,2 @@
+com.sensor.report.impl.CSVReportGenerator
+com.sensor.report.impl.TextReportGenerator

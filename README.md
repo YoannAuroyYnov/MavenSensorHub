@@ -78,6 +78,6 @@ Pour le moment, les dépendances entre les modules sont mauvaises. Les tests éc
 ## Build and run
 
 ```bash
-mvn clean install -DskipTests
-mvn exec:java -pl main-application -Dexec.mainClass="com.jad.Main"
+mvn clean install
+mvn -pl sensor-web exec:java -Dexec.mainClass="com.sensor.Main"
 ```

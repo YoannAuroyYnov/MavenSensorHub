@@ -1,0 +1,5 @@
+com.sensor:sensor-persistence:jar:1.0.0-SNAPSHOT
++- com.sensor:sensor-shared:jar:1.0.0-SNAPSHOT:compile
++- com.sensor:sensor-api:jar:1.0.0-SNAPSHOT:compile
+\- junit:junit:jar:4.13.2:test
+   \- org.hamcrest:hamcrest-core:jar:1.3:test

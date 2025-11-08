@@ -1,3 +1,5 @@
+package com.sensor.core;
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -8,7 +10,7 @@ import java.nio.file.Paths;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class DataManagementTest {
-    private static final String DEPENDENCY_TREE_FILE = "../data-management/target/dependency-tree.txt";
+    private static final String DEPENDENCY_TREE_FILE = Paths.get("target/dependency-tree.txt").toString();
     private static final String DEPENDENCY_PREFIX = "com.sensor:";
     private static String DEPENDENCY_TREE;
 

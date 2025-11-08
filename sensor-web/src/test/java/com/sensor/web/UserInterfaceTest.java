@@ -1,3 +1,5 @@
+package com.sensor.web;
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -8,7 +10,7 @@ import java.nio.file.Paths;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class UserInterfaceTest {
-    private static final String DEPENDENCY_TREE_FILE = "../user-interface/target/dependency-tree.txt";
+    private static final String DEPENDENCY_TREE_FILE = Paths.get("target/dependency-tree.txt").toString();
     private static final String DEPENDENCY_PREFIX = "com.sensor:";
     private static String DEPENDENCY_TREE;
 

@@ -77,7 +77,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
     <build>
         <plugins>
             <plugin>
@@ -121,6 +120,7 @@
                 <executions>
                     <execution>
                         <id>analyze</id>
+                         <phase>generate-resources</phase>
                         <goals>
                             <goal>tree</goal>
                         </goals>

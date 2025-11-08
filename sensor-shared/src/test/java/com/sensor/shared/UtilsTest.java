@@ -1,6 +1,7 @@
+package com.sensor.shared;
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -8,7 +9,7 @@ import java.nio.file.Paths;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class UtilsTest {
-    private static final String DEPENDENCY_TREE_FILE = "../utils/target/dependency-tree.txt";
+    private static final String DEPENDENCY_TREE_FILE = Paths.get("target/dependency-tree.txt").toString();
     private static final String DEPENDENCY_PREFIX = "com.sensor:";
     private static String DEPENDENCY_TREE;
 
